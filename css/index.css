@@ -1,3 +1,65 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* General */
+.container {
+    width: 95%;
+    margin: auto;
+}
 
+.flex-box {
+    display: flex;
+}
+
+/* Navbar and Header */
+
+.nav-bar {
+    justify-content: space-around;
+}
+
+.nav-bar li {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+}
+
+.header-main {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.header-main h1 span {
+    display: block;
+}
+
+/* Section */
+
+#mid-page img {
+    width: 93vw;
+    height: 30vh;
+}
+
+/* Footer Home */
+
+footer span {
+    display: block;
+}
+
+footer div {
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .nav-bar {
+        /* flex-wrap: wrap-reverse; */
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+    }
+}
 
