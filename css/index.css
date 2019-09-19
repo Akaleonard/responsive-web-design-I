@@ -1,3 +1,209 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* General */
+.container {
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.flex-box {
+    display: flex;
+}
+
+/* Navbar and Header */
+
+.nav-bar {
+    justify-content: space-around;
+}
+
+.nav-bar li {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+}
+
+.header-main {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.header-main h1 span {
+    display: block;
+}
+
+/* Section */
+
+#mid-page img {
+    width: 93vw;
+    height: 30vh;
+}
+
+/* Footer Home */
+
+footer span {
+    display: block;
+}
+
+footer div {
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .img {
+        height: 300px;
+        align-content: flex-start;
+        position: relative;
+    }
+
+    #item7 {
+        position: absolute;
+        order: 4;
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+
+    #item6 {
+        order: 6;
+    }
+    
+    #item5 {
+        order: 5;
+    }
+
+    #item4 {
+        order: 7;
+    }
+
+    .header-main img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .img {
+        position: static;
+        height: 10px;
+    }
+
+    .items {
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+
+    #item1 {
+        order: 2;
+    }
+
+    #item2 {
+        order: 3;
+    }
+
+    #item3 {
+        order: 4;
+    }
+
+    #item4 {
+        order: 5;
+    }
+
+    #item5 {
+        order: 6;
+    }
+
+    #item6 {
+        order: 7;
+    }
+
+    #item7 {
+        order: 1;
+        display: block; 
+        height: 30px;
+        position: static;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .header-main img {
+        display: none;
+    }
+
+    .hand-held {
+        flex-direction: column;
+    }    
+
+    #mid-page img {
+        width: 89vw;
+    }
+}
 
